@@ -14,6 +14,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <input type="text"
+                    onChange={this.update.bind(this)} />
                 <h1> {this.state.txt} </h1>
             </div>
         );
@@ -33,3 +35,5 @@ ReactDOM.render(
     <App cat={5} txt="this is the props value" />,
     document.getElementById('app')
 );
+
+export default App
